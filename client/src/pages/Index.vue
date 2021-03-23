@@ -13,7 +13,8 @@
           q-input(
             outlined
             v-model.number="state.amount"
-            type="number"
+            mask="############"
+            unmasked-value
             :prefix="state.currency.symbol"
           )
             template(v-slot:append)
